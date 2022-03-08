@@ -1,0 +1,98 @@
+{
+    "name": "@cdk-constructs-jp/s3-run-fargate-task",
+    "version": "1.0.0",
+    "description": "Trigger Fargate task from S3 event",
+    "license": "MIT",
+    "author": {
+      "name": "Jorge Pla",
+      "url": "https://github.com/sudopla"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/cloudcomponents/cdk-constructs.git",
+      "directory": "packages/cdk-s3-antivirus"
+    },
+    "homepage": "https://github.com/cloudcomponents/cdk-constructs",
+    "keywords": [
+      "aws",
+      "cdk",
+      "fargate",
+      "s3"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+      "lib",
+      ".jsii"
+    ],
+    "scripts": {
+      "build": "jsii -vvv",
+      "build:watch": "jsii -w",
+      "package": "jsii-pacmak -vvv",
+      "test": "tsc --noEmit --project tsconfig.json && jest --passWithNoTests --all --updateSnapshot",
+      "upgrade:cdk": "cdkdx upgrade-cdk",
+      "docgen": "jsii-docgen",
+      "release:npm": "cdkdx release npm",
+      "release:pypi": "cdkdx release pypi"
+      },
+    "jsii": {
+      "outdir": "dist",
+      "tsc": {
+        "outDir": "lib",
+        "rootDir": "src"
+      },
+      "targets": {
+        "python": {
+          "distName": "cdk_constructs_jp.s3_run_fargate_task",
+          "module": "cdk_constructs_jp.s3_run_fargate_task"
+        }
+      }
+    },
+    "peerDependencies": {
+        "aws-cdk-lib": "^2.0.0",
+        "constructs": "^10.0.0"
+    },
+    "devDependencies": {
+        "aws-cdk-lib": "2.0.0",
+        "constructs": "10.0.0"
+    },
+    "jest": {
+      "testMatch": [
+        "**/__tests__/**/*.ts?(x)",
+        "**/?(*.)+(spec|test).ts?(x)"
+      ],
+      "clearMocks": true,
+      "collectCoverage": true,
+      "coverageReporters": [
+        "json",
+        "lcov",
+        "clover",
+        "text"
+      ],
+      "coverageDirectory": "coverage",
+      "coveragePathIgnorePatterns": [
+        "/node_modules/"
+      ],
+      "testPathIgnorePatterns": [
+        "/node_modules/"
+      ],
+      "watchPathIgnorePatterns": [
+        "/node_modules/"
+      ],
+      "reporters": [
+        "default",
+        [
+          "jest-junit",
+          {
+            "outputDirectory": "test-reports"
+          }
+        ]
+      ],
+      "preset": "ts-jest",
+      "globals": {
+        "ts-jest": {
+          "tsconfig": "../../tsconfig.dev.json"
+        }
+      }
+    }
+  }
