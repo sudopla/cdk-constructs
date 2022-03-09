@@ -16,6 +16,7 @@
     "keywords": [
       "aws",
       "cdk",
+      "awscdk",
       "fargate",
       "s3"
     ],
@@ -29,7 +30,7 @@
       "build": "jsii -vvv",
       "build:watch": "jsii -w",
       "package": "jsii-pacmak -vvv",
-      "test": "tsc --noEmit --project tsconfig.json && jest --passWithNoTests --all --updateSnapshot",
+      "test": "tsc --noEmit --project ../../tsconfig.dev.json && jest --passWithNoTests --all --updateSnapshot",
       "upgrade:cdk": "cdkdx upgrade-cdk",
       "docgen": "jsii-docgen",
       "release:npm": "cdkdx release npm",
