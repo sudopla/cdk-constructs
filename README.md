@@ -1,7 +1,7 @@
 #  CDK Constructs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Build Status](https://github.com/sudopla/cdk-constructs/workflows/Build/badge.svg)](https://github.com/cloudcomponents/cdk-constructs/actions?query=workflow=Build)
+[!Build Status](https://github.com/sudopla/cdk-constructs/workflows/Build/badge.svg)](https://github.com/cloudcomponents/cdk-constructs/actions?query=workflow=Build)
 [![typescript](https://img.shields.io/badge/jsii-typescript-blueviolet.svg)](https://www.npmjs.com/search?q=%40cloudcomponents)
 [![python](https://img.shields.io/badge/jsii-python-blueviolet.svg)](https://pypi.org/search/?q=%22cloudcomponents%22&o=)
 
