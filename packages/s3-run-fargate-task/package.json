@@ -1,7 +1,7 @@
 {
     "name": "@sudocdkconstructs/s3-run-fargate-task",
     "version": "1.0.0",
-    "description": "Trigger Fargate task from S3 event",
+    "description": "Run Fargate task with S3 upload event",
     "license": "MIT",
     "author": {
       "name": "Jorge Pla",
