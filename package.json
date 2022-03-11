@@ -3,7 +3,15 @@
     "private": true,
     "scripts": {
         "lint": "eslint --ext .ts packages/",
-        "lint-fix": "eslint --fix --ext .ts packages/"
+        "lint-fix": "eslint --fix --ext .ts packages/",
+        "build": "lerna run build",
+        "docgen": "lerna run docgen",
+        "package": "lerna run package",
+        "test": "lerna run test",
+        "upgrade:cdk": "lerna run upgrade:cdk && yarn",
+        "upgrade:root": "yarn upgrade",
+        "publish:npm": "lerna run publish:npm",
+        "publish:pypi": "lerna run publish:pypi"
     },
     "devDependencies": {
         "@types/jest": "^27.4.0",
