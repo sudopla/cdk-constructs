@@ -10,6 +10,9 @@
         "test": "lerna run test",
         "upgrade:cdk": "lerna run upgrade:cdk && yarn",
         "upgrade:root": "yarn upgrade",
+        "bump:patch": "lerna version patch",
+        "bump:minor": "lerna version minor",
+        "bump:major": "lerna verison major",
         "publish:npm": "lerna run publish:npm",
         "publish:pypi": "lerna run publish:pypi"
     },
