@@ -13,7 +13,7 @@ This is a monorepo with CDK constructs defined inside the packages folder. The c
 
 | Constructs                                                   | Description                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------ |
-|[s3-run-fargate-task](packages/s3-run-fargate-task)          | Run ECS Fargate task when files is uploaded to S3 bucket
+|[s3-run-fargate-task](packages/s3-run-fargate-task)          | Run ECS Fargate task when files are uploaded to S3 bucket
 
 ## License
 
